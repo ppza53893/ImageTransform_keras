@@ -4,7 +4,7 @@ from typing import Union
 import tensorflow as tf
 from tensorflow.keras import Sequential, backend, layers
 
-if tf.__version__ > '2.6.0':
+if tf.__version__ >= '2.6.0':
     from keras.layers.preprocessing.image_preprocessing import transform
     from tensorflow.keras.layers import RandomFlip, RandomRotation, RandomZoom
 else:
